@@ -5,17 +5,22 @@
     box-sizing: border-box;
     text-decoration:none;
 }
+body{
+    background: grey;
+}
 
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
+
 /* nav bar styling */
 .navbar{
     position: fixed;
     width: 100%;
-    background-color: crimson;
+    padding: 15px 0;
+    background: crimson;
     font-family: 'Bebas Neue',sans-serif;
 }
 
@@ -38,4 +43,21 @@
 
 .navbar, .menu li a{
     color:white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+
+/* Start of home section styling */
+.home{
+    display:flex ;
+    background: 
+    url(/Portfolio_project/images/Background\ grass.jpg) no-repeat;
+    height: 100vh;
+    color:white;
+    min-height: 500px;   
+}
+.home, .max-width{
+    margin: auto 0 auto 40px;
+
 }
