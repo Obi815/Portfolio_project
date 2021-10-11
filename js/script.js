@@ -6,4 +6,8 @@ $(document).ready(function(){
             $('.navbar').removeClass("sticky")
         }
     })
+    // activate the menu bar//
+    $('.menu-btn').click(function(){
+        $('.navbar, .menu').toggle("active");
+    });
 });
