@@ -16,6 +16,7 @@
 .navbar{
     position: fixed;
     width: 100%;
+    z-index: 999;
     padding: 30px 0;
     /*background: crimson;*/
     font-family: 'Bebas Neue',sans-serif;
@@ -26,7 +27,7 @@
     background: black; 
 }
 
-.navbar, .max-width{
+.navbar .max-width{
     display: flex;
     align-items:center;
     justify-content: space-between;
@@ -113,6 +114,64 @@
     color: darkmagenta;
     background: none;
 }
+
+/* About section styling */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: "Bebas Neue",sans-serif;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: "Bebas Neue",sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    background: black;
+    transform: translate(-50%);
+}
+.about .title::after{
+    content: "Who Am I";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 20px;
+    color: darkmagenta;
+    padding: 5px;
+    background: white;
+    transform: translate(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+about .about-content .right{
+    width: 55%;
+}
+
+
 
 
     
