@@ -115,14 +115,10 @@
     background: none;
 }
 
-/* About section styling */
 section{
     padding: 100px 0;
 }
-.about{
-    font-family: "Bebas Neue",sans-serif;
-}
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -131,7 +127,7 @@ section{
     padding-bottom: 20px;
     font-family: "Bebas Neue",sans-serif;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -141,8 +137,7 @@ section{
     background: black;
     transform: translate(-50%);
 }
-.about .title::after{
-    content: "Who Am I";
+section .title::after{
     position: absolute;
     bottom: -15px;
     left: 50%;
@@ -151,6 +146,44 @@ section{
     padding: 5px;
     background: white;
     transform: translate(-50%);
+}
+
+/* About section styling */
+
+.about, .services{
+    font-family: "Bebas Neue",sans-serif;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: "Bebas Neue",sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 160px;
+    height: 3px;
+    background: black;
+    transform: translate(-50%);
+}
+section .title::after{
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 20px;
+    color: darkmagenta;
+    padding: 5px;
+    background: white;
+    transform: translate(-50%);
+}
+.about .title::after{
+    content: "Who Am I";
 }
 .about .about-content{
     display: flex;
@@ -197,6 +230,23 @@ section{
     background: none;
     border-radius: 2px;
     border-color: black;
+}
+/* Service section styling */
+.services{
+    color: white;
+    background:rgb(18, 156, 236);
+}
+
+.services .title::before{
+    background: white;
+
+}
+.services .title::after{
+    background:rgb(18, 156, 236);
+    content: "What I Provide";
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
 }
 
 
