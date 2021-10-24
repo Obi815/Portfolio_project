@@ -153,35 +153,7 @@ section .title::after{
 .about, .skills{
     font-family: "Bebas Neue",sans-serif;
 }
-section .title{
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500px;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: "Bebas Neue",sans-serif;
-}
-.section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 160px;
-    height: 3px;
-    background: black;
-    transform: translate(-50%);
-}
-section .title::after{
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    font-size: 20px;
-    color: darkmagenta;
-    padding: 5px;
-    background: white;
-    transform: translate(-50%);
-}
+
 .about .title::after{
     content: "Who Am I";
 }
@@ -242,8 +214,77 @@ section .title::after{
 .skills{
     background: rgb(15, 178, 253);
 }
-.skills .skills-content .column .text{
-    width: calc(50%-30px);
+.skills .skills-content .column{
+    width: calc(40% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: white;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: darkmagenta;
+}
+.skills .skills-content .right .html::before{
+    width: 90%;
+}
+.skills .skills-content .right .css::before{
+    width: 70%;
+}
+.skills .skills-content .right .js::before{
+    width: 50%;
+}
+.skills .skills-content .right .pyt::before{
+    width: 40%;
+}
+.skills .skills-content .right .jqr::before{
+    width: 60%;
+}
+.skills .skills-content .right .cplus::before{
+    width: 20%;
+}
+
+/* Style Read More btn*/
+.skills .skills-content .column a{
+    display: inline-block;
+    background: darkmagenta;
+    color: white;
+    font-size: 15px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 3px solid white;
+    transition: all 0.3s ease;
+} 
+.skills .skills-content .column a:hover{
+    color: white;
+    background: none;
+    border-radius: 2px;
+    border-color: darkmagenta;
 }
 
 
@@ -329,6 +370,10 @@ section .title::after{
     .about .about-content .right{
         flex: 100%;
     }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
    
 }
 @media (max-width: 690px){
@@ -344,5 +389,9 @@ section .title::after{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
     }
 }
