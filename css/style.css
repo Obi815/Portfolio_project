@@ -150,7 +150,7 @@ section .title::after{
 
 /* About section styling */
 
-.about, .skills{
+.about, .skills, .projects{
     font-family: "Bebas Neue",sans-serif;
 }
 
@@ -158,7 +158,8 @@ section .title::after{
     content: "Who Am I";
 }
 
-.about .about-content, .skills .skills-content{
+.about .about-content, .skills .skills-content,
+.projects{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -205,6 +206,7 @@ section .title::after{
     border-radius: 2px;
     border-color: black;
 }
+
 
 /* skills section styling */
 .skills .title::after{
@@ -268,6 +270,7 @@ section .title::after{
     width: 20%;
 }
 
+
 /* Style Read More btn*/
 .skills .skills-content .column a{
     display: inline-block;
@@ -287,6 +290,99 @@ section .title::after{
     border-color: darkmagenta;
 }
 
+/* styling the Projects part*/
+
+.projects .title::after{
+    content: "What I've Done";
+    
+}
+.projects .carousel .card{
+    background: black;
+    border-radius: 6px;
+    padding: 25px 35px;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover{
+    background: darkmagenta;
+}
+.projects .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid ;
+    color: white;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover img{
+    border-color: black;
+}
+.projects .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: white;
+    transition: all 0.3s ease;
+    
+}
+.projects .carousel .card:hover .text{
+    color: black;
+}
+.projects .carousel .card p{
+    color: white;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover p{
+    color: black;
+}
+.projects .carousel .box a{
+    display: inline-block;
+    background: darkmagenta;
+    color: white;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 3px solid white;
+    transition: all 0.3s ease;
+}
+.projects .carousel .box a:hover{
+    color: white;
+    background: black;
+    border-radius: 2px;
+    border-color: white;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid black!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active, .owl-dot:hover{
+    background: darkmagenta!important;
+}
 
 
     
