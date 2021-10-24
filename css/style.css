@@ -116,7 +116,7 @@
 }
 
 section{
-    padding: 100px 0;
+    padding: 100px 0 0;
 }
 section .title{
     position: relative;
@@ -150,7 +150,7 @@ section .title::after{
 
 /* About section styling */
 
-.about, .services{
+.about, .skills{
     font-family: "Bebas Neue",sans-serif;
 }
 section .title{
@@ -162,7 +162,7 @@ section .title{
     padding-bottom: 20px;
     font-family: "Bebas Neue",sans-serif;
 }
-section .title::before{
+.section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -185,11 +185,13 @@ section .title::after{
 .about .title::after{
     content: "Who Am I";
 }
-.about .about-content{
+
+.about .about-content, .skills .skills-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding: 100px 0;
 }
 .about .about-content .left{
     width: 45%;
@@ -231,22 +233,17 @@ section .title::after{
     border-radius: 2px;
     border-color: black;
 }
-/* Service section styling */
-.services{
-    color: white;
-    background:rgb(18, 156, 236);
-}
 
-.services .title::before{
-    background: white;
-
+/* skills section styling */
+.skills .title::after{
+    content: "what i know";
+    background: rgb(15, 178, 253);
 }
-.services .title::after{
-    background:rgb(18, 156, 236);
-    content: "What I Provide";
+.skills{
+    background: rgb(15, 178, 253);
 }
-.services .serv-content .card{
-    width: calc(33% - 20px);
+.skills .skills-content .column .text{
+    width: calc(50%-30px);
 }
 
 
