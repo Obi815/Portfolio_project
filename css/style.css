@@ -150,7 +150,7 @@ section .title::after{
 
 /* About section styling */
 
-.about, .skills, .projects{
+.about, .skills, .projects, .contact{
     font-family: "Bebas Neue",sans-serif;
 }
 
@@ -159,7 +159,7 @@ section .title::after{
 }
 
 .about .about-content, .skills .skills-content,
-.projects{
+.projects, .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -252,22 +252,22 @@ section .title::after{
     background: darkmagenta;
 }
 .skills .skills-content .right .html::before{
-    width: 90%;
+    width: 95%;
 }
 .skills .skills-content .right .css::before{
-    width: 70%;
+    width: 85%;
 }
 .skills .skills-content .right .js::before{
-    width: 50%;
+    width: 70%;
 }
 .skills .skills-content .right .pyt::before{
-    width: 40%;
+    width: 60%;
 }
 .skills .skills-content .right .jqr::before{
     width: 60%;
 }
 .skills .skills-content .right .cplus::before{
-    width: 20%;
+    width: 55%;
 }
 
 
@@ -385,6 +385,52 @@ section .title::after{
 }
 
 
+/* Contact stylying */
+.contact .title::after{
+    content: "Get in touch";
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left{
+    text-align: justify;
+}
+.contact .contact-content .icon{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: darkmagenta;
+}
+.contact .contact-content .info .head{
+    font-weight: 600;
+}
+.contact .contact-content .info .sub-title{
+/* style the words under title */
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+}
+
+
     
 /*responsive query tools*/
 @media (max-width: 1300px){
@@ -490,4 +536,5 @@ section .title::after{
         width: 100%;
         margin-bottom: 35px;
     }
+   
 }
