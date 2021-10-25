@@ -5,11 +5,39 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("sticky")
         }
+        if(this.scroll > 500){
+            $('.scroll-up-btn').addClass("show");
+        }else{
+            $('.scroll-up-btn').removeClass("show");
+        }
     });
+
+    // slide up script//
+    $('.scroll-up-btn').click(function(){
+        $('html').animate({scrollTop: 0});
+    });
+
+
     // activate the menu bar//
     $('.menu-btn').click(function(){
         $('.navbar, .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
+    });
+
+    //type animation//
+    var typed = new Typed(".typing",{
+        strings: ["Podcaster", "Gamer", "Designer", "Web Designer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+
+    });
+    var typed = new Typed(".typing-2",{
+        strings: ["Podcaster", "Gamer", "Designer", "Web Designer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+
     });
 
     // project owl carousel sript//

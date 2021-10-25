@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -15,15 +16,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
 </head>
 <body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#home">Portfo<span class="portfolio">lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#projects" class="menu-btn">Projects</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -37,12 +41,13 @@
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Obinna Ezeka</div>
-                <div class="text-3">And I'm a <span class="web">Web Developer</span></div>
+                <div class="text-3">And I'm a <span class="web typing"></span></div>
                 <a class="hire" href="#">Hire Me</a>
             </div>
             
         </div>
     </section>
+
 
     <!-- About section code -->
     <section class="about" id="about">
@@ -53,7 +58,7 @@
                     <img src="/Portfolio_project/images/IMG_2037.jpeg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Obinna and I'm a <span>"Skill"</span></div>
+                    <div class="text">I'm Obinna and I'm a <span class="typing-2">"Skill"</span></div>
                     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                         Laborum omnis accusantium impedit reprehenderit quidem nesciunt possimus 
                         culpa accusamus porro harum quasi autem non magni officiis, tenetur rerum 
@@ -64,6 +69,7 @@
                 </div>
             </div>           
         </div>
+
 
     <!-- Skills Section -->
     <section class="skills" id="skills">
@@ -125,6 +131,7 @@
     </section>
 </section>
 
+
 <!-- Project section -->
 <section class="projects" id="projects">
     <div class="max-width">
@@ -173,6 +180,9 @@
         </div>
     </div>
 </section>
+
+
+<!-- Contact section -->
 <section class="contact" id="contact">
     <div class="max-width">
         <h2 class="title">Contact Me</h2>
@@ -229,6 +239,13 @@
         </div>
     </div>
 </section>
+
+<!-- FOOTER SECTION-->
+<footer>
+    <span> Created By <a class="foot-name" href="#"> Obinna Ezeka</a> | <span class="far fa-copyright">
+        2021 All Rights Reserved. 
+    </span></span>
+</footer>
     
 
 
